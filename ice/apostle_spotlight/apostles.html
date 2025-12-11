@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        body {
+            background-color: #E8ECED;
+            font-family: Arial;
+        }
+
+         #spotlight {
+            display: flex;
+            width: 70%;
+            height: 100%;
+            margin: auto;
+            border: 10px solid black;
+            border-radius: 15px; 
+            flex-direction: column;
+        }
+
+        .image_container {
+            border: 10px solid white;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .main_container {
+            border: 10px solid white;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .elder_container {
+            border: 10px solid white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        #spotlight img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 .5px;
+        }
+
+        .image_container:hover, .elder_container:hover, .main_container:hover {
+            border: 10px solid lightblue;
+        }
+
+        #first_presidency {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: center;
+            align-items: end;
+            gap: 30px;
+        }
+
+        #quorum {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: auto;
+            padding-bottom: 2.5%;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            font-style: bold;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            font-style: normal;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+     <div id="spotlight" style="background-image: url(images/christus.webp); background-repeat: no-repeat; background-position: center center;">
+        <h1>First Presidency</h1>
+        <section id="first_presidency">
+            <div class="image_container"><img src="images/oaks.webp" alt="President Oaks"></div>
+            <div class="main_container"><img src="images/nelson.webp" alt="President Nelson"></div>
+            <div class="image_container"><img src="images/eyring.webp" alt="President Eyring"></div>
+        </section>
+        <h2>Quorum of the Twelve Apostles</h2>
+        <section id="quorum">
+            <div class="elder_container"><img src="images/holland.webp" alt="Elder Holland"></div>
+            <div class="elder_container"><img src="images/uchtdorf.webp" alt="Elder Uchtdorf"></div>
+            <div class="elder_container"><img src="images/bednar.webp" alt="Elder Bednar"></div>
+            <div class="elder_container"><img src="images/cook.webp" alt="Elder Cook"></div>
+            <div class="elder_container"><img src="images/christofferson.webp" alt="Elder Christofferson"></div>
+            <div class="elder_container"><img src="images/anderson.webp" alt="Elder Andersen"></div>
+            <div class="elder_container"><img src="images/rasband.webp" alt="Elder Rasband"></div>
+            <div class="elder_container"><img src="images/stevenson.webp" alt="Elder stevenson"></div>
+            <div class="elder_container"><img src="images/renlund.webp" alt="Elder Renlund"></div>
+            <div class="elder_container"><img src="images/gong.webp" alt="Elder Gong"></div>
+            <div class="elder_container"><img src="images/soares.webp" alt="Elder Soares"></div>
+            <div class="elder_container"><img src="images/kearon.webp" alt="Elder Kearon"></div>
+        </section>
+     </div>
+</body>
+</html>

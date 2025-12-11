@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+         <table id="favorites">
+          <thead>
+            <th style="width: 35%;">Speaker</th>
+            <th style="width: 35%;">Title</th>
+            <th style="width: 15%;">Location</th>
+            <th style="width: 15%;">Year</th>
+          </thead>
+          <tr>
+            <td style="width: 35%;">Ulisses Soares</td>
+            <td style="width: 35%;">Drawing Strength from the Savior's Love</td>
+            <td style="width: 15%;">BYUI</td>
+            <td style="width: 15%;">2025</td>
+         </tr>
+         </table>
+         <form class="talk-input" action="Submit">
+          <div class="form-row-headers">
+            <label for="speaker" style="width: 35%;">Speaker</label>
+            <label for="title" style="width: 35%;">Title</label>
+            <label for="location" style="width: 15%;">Location</label>
+            <label for="year" style="width: 15%;">Year</label>
+          </div>
+
+          <div class="form-row-inputs">
+            <input type="sname" id="sname" name="sname" style="width: 35%;">
+            <input type="title" id="title" name="title" style="width: 35%;">
+            <input type="location" id="loc" name="loc" style="width: 15%;">
+            <input type="year" id="year" name="year" style="width: 15%;">
+          </div>
+
+          <div class="form-row-submit">
+            <button type="submit">Submit Talk</button>
+          </div>
+         </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

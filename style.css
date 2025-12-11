@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-color: #FAF2E9;
+    --secondary-color: #2E4045;
+    --accent1-color: #BCD1AA;
+    --accent2-color: #838D89;
+    --accent3-color: #F3F0E1;
+
+    --heading-font: "Rubik";
+    --paragraph-font: Rubik, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF2E9;
+    font-family: var(--paragraph-font);
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding-bottom: 15px;
+    border-bottom: 2.5px outset #BCD1AA;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+#logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+#logo:hover {
+    transform: scale(1.075);
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+.letter-logo-container {
+    margin-top: 12px;
+}
+
+#letter-logo {
+    border-radius: 30px;
+    border: .1px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+#letter-logo:hover {
+    transform: scale(1.05  );
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+.site-header .spacer {
+    margin-left: auto;
+    width: 75px;
+    visibility: hidden;
+}
+
+.introduction {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    border-bottom: 2.5px outset #BCD1AA;
+    background-color: var(--accent3-color);
+}
+
+.introduction .image-container img {
+    border-radius: 20%;
+    height: 90%;
+}
+
+.introduction .image-container  {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.introduction .text-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 50%;
+
+}
+
+.introduction .text-container p {
+    color: var(--secondary-color);
+}
+
+.introduction h1 {
+    color: var(--secondary-color);
+}
+
+.navigation-menu {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.navigation-grid {
+    margin-top: 20px;
+    
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.navigation-grid img {
+    border-radius: 20px;
+    width: 230px;
+    height: 230px;
+}
+
+.navigation-grid a {
+    color: #BCD1AA;
+    text-decoration: none;
+}
+
+.navigation-grid a:visited {
+    color: #BCD1AA;
+    text-decoration: none;
+}
+
+.navigation-grid .about-me {
+    grid-column: 1 / span 1;
+    text-align: center;
+    margin: 1rem auto;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    font-size: 1.em;
+}
+
+.navigation-grid .wwr {
+    grid-column: 2 / span 1;
+    text-align: center;
+    margin: 1rem auto;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.navigation-grid .ICE {
+    grid-column: 3 / span 1;
+    text-align: center;
+    margin: 1rem auto;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.about-me:hover .inner,
+.wwr:hover .inner,
+.ICE:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.inner .front-side,
+.inner .back-side {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.front-side {
+    background: var(--accent1-color);
+    border:  2px solid var(--secondary-color);
+
+}
+
+.back-side {
+    background: var(--secondary-color);
+    color: var(--accent1-color);
+    transform: rotateY(180deg);
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    height: 100px;
+    margin-top: 50px;;
+    border-top: 2.5px inset #BCD1AA;
+}
+
+.site-footer .spacer {
+    visibility: hidden;
+    width: 300px;
+    margin-right: auto;
+
+}
+
+.site-footer .text-container {
+    font-size: 1.025em;
+    font-weight: bold;
+    
+}
+
+.site-footer .socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    margin-left: auto;
+}
+
+.instagram img,
+.github img,
+.linkedin img{
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+.instagram img:hover,
+.github img:hover,
+.linkedin img:hover {
+    transform: scale(1.075);
+    box-shadow: 0 0 15px var(--secondary-color);
+}

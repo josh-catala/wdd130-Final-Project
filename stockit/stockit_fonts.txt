@@ -1,0 +1,5 @@
+1. Poppins1Poppins is a widely popular, near-perfect geometric sans-serif with a simple, friendly aesthetic.Use CaseExcellent for Headings and Body TextGoogle Fonts Linkhttps://fonts.google.com/specimen/PoppinsCSS Embed Link@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+2. MontserratInspired by the old posters and signs in the traditional Montserrat neighborhood of Buenos Aires, it has a strong, clean geometric base.2Use CaseExcellent for Headings (Can feel a bit heavy for long body text)Google Fonts Linkhttps://fonts.google.com/specimen/MontserratCSS Embed Link@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+3. DM SansDM Sans is specifically designed for high legibility at smaller text sizes, making it an excellent choice for a minimalist, geometric UI/UX design.3Use CaseExcellent for Body Text and UI Elements (Buttons, Navigation)Google Fonts Linkhttps://fonts.google.com/specimen/DM+SansCSS Embed Link@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');

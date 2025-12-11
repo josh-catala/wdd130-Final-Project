@@ -1,0 +1,7 @@
+Dark Blue/Outline	#334155	Used for all outlines, glasses, and the lettering (e.g., "jlc," "josh.catala."), giving a slightly softer look than pure black.
+Cream/Background	#F6F4EB	The main soft, off-white background color used in the coder illustration and the lightest parts of the scene (desktop, outer ring fill).
+Muted Mint Green	#BDE0D8	The pale, soft green color used for the wall/background behind the character.
+Medium Blue/Monitor	#8FA9C3	The main color for the monitor casing and the chair.
+Warm Wood Brown		#D4A47E	The color of the desk and other wooden elements.
+Soft Yellow/Idea	#FCD34D	The lightbulb color, used as an accent.
+Light Gray/Cloud	#D1D5DB	The color of the thought cloud and gear, used as a subtle detail.

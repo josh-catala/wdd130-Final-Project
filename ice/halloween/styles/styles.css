@@ -1,0 +1,143 @@
+/* Add your CSS here to style your halloween page */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-color: #050404;
+    --secondary-color: #f7ae5bdc;
+    --accent1-color: #2E1C2B;
+    --accent2-color: #4A1942;
+    --accent3-color: #c13a8e;
+
+    --heading-font: "Rubik";
+    --paragraph-font: Rubik, sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+}
+
+img {
+    display: flex;
+    box-shadow: 0px 20px 10px var(--primary-color) inset;
+    border-radius: 10px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--accent3-color);
+    text-align: center;
+}
+
+h1 {
+    flex-basis: 100%;
+}
+
+section p {
+    margin: auto;
+    color: var(--secondary-color);
+    text-align: center;
+    width: 350px;
+}
+
+header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent2-color);
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+header nav {
+    margin: 0%;
+    width: 90%;
+}
+
+ul {
+    display: flex;
+    margin: 0%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5em;  
+}
+
+li {
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+}
+
+#wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+    background-color: #050404;
+    border-radius: 20px;
+    height: 70%;
+    width: 90%;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#wrapper::after, #wrapper::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 15px;
+    border-radius: 20px;
+    background-image: conic-gradient(from var(--angle),  var(--secondary-color), var(--accent3-color), var(--accent2-color), var(--accent1-color), var(--secondary-color));
+    animation: 3s spin linear infinite;
+}
+
+#wrapper::before{
+    filter: blur(1.5rem);
+    opacity: .8;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+main {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #c13a8e;
+
+}
+
+
+
