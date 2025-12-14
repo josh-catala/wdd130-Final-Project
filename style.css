@@ -117,7 +117,7 @@ body {
     
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
 }
 
@@ -170,6 +170,18 @@ body {
     font-size: 1.5em;
 }
 
+.navigation-grid .report {
+    grid-column: 4 / span 1;
+    text-align: center;
+    margin: 1rem auto;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
 .inner {
     position: relative;
     width: 100%;
@@ -180,7 +192,8 @@ body {
 
 .about-me:hover .inner,
 .wwr:hover .inner,
-.ICE:hover .inner {
+.ICE:hover .inner,
+.report:hover .inner  {
     transform: rotateY(180deg);
 }
 
