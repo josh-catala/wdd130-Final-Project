@@ -1,0 +1,10 @@
+.main h1,
+.main h2,
+.main h3{
+    text-align: center;
+}
+
+.main p {
+    width: 90%;
+    margin-left: 20px;
+}
